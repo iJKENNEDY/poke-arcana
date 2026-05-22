@@ -1,0 +1,107 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --bg-primary: #0a0a14;
+  --bg-secondary: #12121f;
+  --bg-card: #1a1a2e;
+  --text-primary: #e8e0d0;
+  --text-secondary: #a89880;
+  --accent-gold: #d4a853;
+  --accent-purple: #7b52ab;
+  --border-color: #2a2a3e;
+  --neon-blue: #00f3ff;
+  --neon-pink: #ff00ff;
+  --neon-green: #39ff14;
+  --neon-yellow: #ffff00;
+  --neon-purple: #bf00ff;
+  --neon-orange: #ff6a00;
+}
+
+body.dark-mode {
+  --bg-primary: #0a0a14;
+  --bg-secondary: #12121f;
+  --bg-card: #1a1a2e;
+  --text-primary: #e8e0d0;
+  --text-secondary: #a89880;
+  --accent-gold: #d4a853;
+  --accent-purple: #7b52ab;
+  --border-color: #2a2a3e;
+}
+
+body.light-mode {
+  --bg-primary: #f8f4e3;
+  --bg-secondary: #eee8d5;
+  --bg-card: #fff8e7;
+  --text-primary: #4a4a4a;
+  --text-secondary: #6b6b6b;
+  --accent-gold: #b8860b;
+  --accent-purple: #8b008b;
+  --border-color: #d4c8a6;
+}
+
+/* Type-based background colors */
+.bg-normal { background: #f5f5f5; }
+.bg-fire { background: #ffebe6; }
+.bg-water { background: #e6f7ff; }
+.bg-electric { background: #fff9e6; }
+.bg-grass { background: #f0fff4; }
+.bg-ice { background: #e6ffff; }
+.bg-fighting { background: #fff0f0; }
+.bg-poison { background: #f8f0ff; }
+.bg-ground { background: #fff8f0; }
+.bg-flying { background: #f0f5ff; }
+.bg-psychic { background: #fff0f5; }
+.bg-bug { background: #f8fff0; }
+.bg-rock { background: #fffaf0; }
+.bg-ghost { background: #f5f0ff; }
+.bg-dragon { background: #f0f0ff; }
+.bg-dark { background: #f0f0f0; }
+.bg-steel { background: #f5f5f5; }
+.bg-fairy { background: #fff8fc; }
+
+/* Neon text colors by type */
+.neon-normal { color: #8a8a5f; text-shadow: 0 0 5px #8a8a5f, 0 0 10px #8a8a5f; }
+.neon-fire { color: #ff4500; text-shadow: 0 0 5px #ff4500, 0 0 10px #ff4500; }
+.neon-water { color: #1e90ff; text-shadow: 0 0 5px #1e90ff, 0 0 10px #1e90ff; }
+.neon-electric { color: #ffff00; text-shadow: 0 0 5px #ffff00, 0 0 10px #ffff00; }
+.neon-grass { color: #32cd32; text-shadow: 0 0 5px #32cd32, 0 0 10px #32cd32; }
+.neon-ice { color: #00ffff; text-shadow: 0 0 5px #00ffff, 0 0 10px #00ffff; }
+.neon-fighting { color: #ff0000; text-shadow: 0 0 5px #ff0000, 0 0 10px #ff0000; }
+.neon-poison { color: #9400d3; text-shadow: 0 0 5px #9400d3, 0 0 10px #9400d3; }
+.neon-ground { color: #daa520; text-shadow: 0 0 5px #daa520, 0 0 10px #daa520; }
+.neon-flying { color: #87ceeb; text-shadow: 0 0 5px #87ceeb, 0 0 10px #87ceeb; }
+.neon-psychic { color: #ff1493; text-shadow: 0 0 5px #ff1493, 0 0 10px #ff1493; }
+.neon-bug { color: #7cfc00; text-shadow: 0 0 5px #7cfc00, 0 0 10px #7cfc00; }
+.neon-rock { color: #8b8970; text-shadow: 0 0 5px #8b8970, 0 0 10px #8b8970; }
+.neon-ghost { color: #8b008b; text-shadow: 0 0 5px #8b008b, 0 0 10px #8b008b; }
+.neon-dragon { color: #0000ff; text-shadow: 0 0 5px #0000ff, 0 0 10px #0000ff; }
+.neon-dark { color: #000000; text-shadow: 0 0 5px #000000, 0 0 10px #000000; }
+.neon-steel { color: #4682b4; text-shadow: 0 0 5px #4682b4, 0 0 10px #4682b4; }
+.neon-fairy { color: #ff69b4; text-shadow: 0 0 5px #ff69b4, 0 0 10px #ff69b4; }
+
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Georgia', 'Times New Roman', serif;
+  background: var(--bg-primary);
+  color: var(--text-primary);
+  min-height: 100vh;
+  background-image:
+    radial-gradient(1px 1px at 20% 30%, rgba(212, 168, 83, 0.15), transparent),
+    radial-gradient(1px 1px at 40% 70%, rgba(123, 82, 171, 0.15), transparent),
+    radial-gradient(1px 1px at 60% 20%, rgba(212, 168, 83, 0.1), transparent),
+    radial-gradient(1px 1px at 80% 80%, rgba(123, 82, 171, 0.1), transparent);
+}
+
+#app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
